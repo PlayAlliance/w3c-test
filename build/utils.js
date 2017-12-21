@@ -50,7 +50,7 @@ exports.cssLoaders = function (options) {
   return {
     css: generateLoaders(),
     postcss: generateLoaders(),
-    less: generateLoaders('less'),
+    less: generateLoaders('px2rem-loader?remUnit=75&remPrecision=8!autoprefixer-loader?{browsers:["iOS >= 7","Chrome >= 45","Android >= 4"]}!less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
     stylus: generateLoaders('stylus'),
