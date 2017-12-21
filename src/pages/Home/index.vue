@@ -9,7 +9,7 @@
       <p>{{info}}</p>
     </header>
     <main>
-      <a v-for="card in cards" :class="`card-tpl ${card.class}`" :herf="card.link">
+      <a v-for="card in cards" :class="`card-tpl ${card.class}`" :href="card.link">
         <h1>{{card.name}}</h1>
         <p>{{card.desc}}</p>
       </a>
