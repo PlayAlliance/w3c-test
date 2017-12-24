@@ -2,7 +2,7 @@
 @import './styles/base.less';
 #app {
   padding-bottom: 100px;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
 }
 </style>
 

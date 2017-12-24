@@ -1,0 +1,70 @@
+.wrapper {
+  background: #f4f4f4;
+}
+.side-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 350px;
+  text-align: center;
+  h1 {
+    font-size: 40px;
+    color: #ffffff;
+  }
+  p {
+    color: #ffffff;
+  }
+  .logo {
+    width: 150px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    a {
+      color: #ff0;
+      text-decoration: underline;
+    }
+  }
+}
+
+.flex-main {
+  display: flex;
+  margin-left: 350px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.app-wrapper {
+  flex-basis: 200px;
+  padding: 12.5px;
+}
+.app-ctx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  box-shadow: 2px 4px 12px rgba(36, 37, 38, 0.1);
+  transition: all 0.4s;
+  background-color: #ffffff;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 18px rgba(18, 122, 240, 0.2);
+  }
+  .app-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .app-name {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #666;
+    text-align: center;
+  }
+}

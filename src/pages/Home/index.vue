@@ -1,4 +1,4 @@
-<style lang="less">
+<style lang="less" scoped>
 @import './index.less';
 </style>
 <template>
@@ -9,7 +9,7 @@
       <p>{{info}}</p>
     </header>
     <main>
-      <a v-for="card in cards" :class="`card-tpl ${card.class}`" :href="card.link">
+      <a v-for="card in cards" :class="`card-tpl ${card.class}`" :href="card.link" :key="card.name">
         <h1>{{card.name}}</h1>
         <p>{{card.desc}}</p>
       </a>
